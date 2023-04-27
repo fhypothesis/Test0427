@@ -1,0 +1,49 @@
+h2{
+    text-align: center;
+}
+p{
+    display: inline-block;
+    background-color: whitesmoke;
+    border: 1px solid grey;
+    width: 60px;
+    height: 300px;
+    font-size: 13px;
+    text-align: center;
+    transition: background-color 1s, font-size 1s, color 1s,
+        width 1s, height 1s;
+    /* transition-timing-function: ease-out;
+    transition-delay: 1s; */
+}
+div{
+    margin: 0 auto;
+    text-align: center;
+}
+/* 마우스 오버 */
+p#do:hover{
+    background-color: red;
+}
+p#re:hover{
+    background-color: orange;
+}
+p#mi:hover{
+    background-color: rgb(218, 204, 12);
+}
+p#pa:hover{
+    background-color: green;
+}
+p#sol:hover{
+    background-color: blue;
+}
+p#ra:hover{
+    background-color: skyblue;
+}
+p#si:hover{
+    background-color: purple;
+}
+/* 마우스 클릭 */
+p:active{
+    font-size: 35px;
+    color: whitesmoke;
+    width: 80px;
+    height: 350px;
+}
