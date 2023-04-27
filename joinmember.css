@@ -1,0 +1,24 @@
+body {
+    background-color: aliceblue;
+}
+h1 {
+    background-color: deepskyblue;
+    color: white;
+    text-align: center;
+}
+div{
+    margin:0 auto; text-align: center;
+}
+form#main_content{
+    margin: 0 auto;
+}
+p {
+    color: white;
+    background-color: deepskyblue;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}
+input#sec_tel, input#thi_tel{
+    width: 40px;
+}

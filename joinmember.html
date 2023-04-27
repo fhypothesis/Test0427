@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>회원가입</title>
+<link rel="stylesheet" href="joinmember.css">
+</head>
+<body>
+<h1>Join US!</h1>
+<div>
+<form id="main_content">
+    <label for="name">Your name: </label>
+    <input type="text" id="name" name="name" value=""><br>
+    <br>
+    <label for="phone">Phone number</label>
+    <select id="first_tel">
+        <option value="010">010</option>
+        <option value="011">011</option>
+        <option value="016">011</option>
+        <option value="018">011</option>
+    </select> - 
+    <input type="text" id="sec_tel"> -
+    <input type="text" id="thi_tel"><br><br>
+        <form>
+        <label>Birthday</label>
+        <input type="date" id="birthday" name="birthday"><br><br>
+        </form>
+    <hr><br>
+    <label for="gender">Choose the <b>gender</b> category closest to you:</label><br><br>
+        <form>
+            <input type="radio" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" name="gender" value="etc">
+            <label for="etc">ETC</label><br><br>
+        </form>
+    <label for="visit">How did you <b>find</b> us: </label><br><br>
+        <form>
+            <input type="checkbox" name="visit" value="search">
+            <label for="search">Search</label>
+            <input type="checkbox" name="visit" value="banner">
+            <label for="banner">Banner</label>
+            <input type="checkbox" name="visit" value="tel">
+            <label for="tel">Tel</label>
+            <input type="checkbox" name="visit" value="recommand">
+            <label for="recommand">Recommand</label>
+        </form>
+        <br>
+        <input type="button" onclick="alert('Thanks for signing up!')" value="SUBMIT">
+</form>
+</div>
+<p><b>Sign up for our site to receive various news!</b></p>
+</body>
+</html>
