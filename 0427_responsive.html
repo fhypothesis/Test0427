@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 뷰포트 메타 태그 :: 반응형 웹을 만들 때 필요한 태그 -->
+    <!-- 뷰포트 :: 브라우저 창의 영역/크기 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 웹</title>
+</head>
+<style>
+/* width, height, max-width, max-height, min-width, min-height */
+/* max-width/height :: 최대 너비, 높이 설정 */
+/* height 값 지정해주지 않으면 width 값 변화함에 따라 비율 유지하여 사이즈 변동 */
+/* min-width/height :: 최소 너비, 높이 설정 */
+/* height 값 지정해주지 않으면 width 값 변화함에 따라 비율 유지하여 사이즈 변동 */
+img{
+    max-width: 70%;
+    width: 500px; /* 너비값 고정 */
+}
+</style>
+<body>
+<picture> 
+    <source srcset="https://img.freepik.com/premium-photo/cute-puppy-pomeranian-mixed-breed-pekingese-dog-run-on-the-grass-with-happiness_34266-1814.jpg"
+        media="(max-width:600px)" style="width: 300px;">
+    <source srcset="https://th.bing.com/th/id/R.7e82b177741920e753b7cb1dd58988d8?rik=pf8jiO7dM1q9XQ&riu=http%3a%2f%2fimg.animalplanet.co.kr%2fthumbnail%2f2019%2f08%2f12%2f2000%2fxz9m9ec9g69gh33qvd8z.jpg&ehk=EMqDwHUG3KrmAMUoX9BbDYjYpvq5hbzwyt9I08FYFxs%3d&risl=&pid=ImgRaw&r=0"
+        media="(max-width:1200px)" style="width: 900px;">
+    <source srcset="https://images.mypetlife.co.kr/content/uploads/2021/12/08155636/tobias-2KZfAwi-0W4-unsplash-edited-scaled.jpg"
+        style="width: 1400px;">
+    <img> <!-- 이미지 공간 배정만 하는 용도 -->
+</picture>
+<!-- 뷰포트 크기에 따라 폰트 사이즈 변경할 때: vw(viewport width) 사용 -->
+<!-- <label style="font-size:5vw">귀여운 고양이 사진</label> -->
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미디어쿼리 이용한 백그라운드 및 폰트 색 변경</title>
+</head>
+<style>
+p{
+    background-color: white;
+    border: 5px solid yellow;
+    color: black;
+    padding: 20px;
+}
+
+@media screen and (min-width:600px) {
+    p#first{
+        background-color: blue;
+    }
+}
+@media screen and (min-width:700px) {
+    p#second{
+        background-color: rgb(17, 17, 88);
+    }
+}
+@media screen and (min-width:800px) {
+    p#third{
+        background-color: rgb(107, 19, 70);
+    }
+}
+@media screen and (min-width:900px) {
+    p#fourth{
+        background-color: rgb(92, 92, 131);
+    }
+}
+@media screen and (min-width:1000px) {
+    p#fifth{
+        background-color: rgb(33, 197, 121);
+    }
+}
+@media screen and (min-width:1200px) {
+    p{
+        color: white;
+    }
+}
+/* 사각형의 색상 변경(변하는 시점 달리), 글씨 색상 변경 */
+</style>
+<body>
+<p id="first">1st p 태그</p>
+<p id="second">2nd p 태그</p>
+<p id="third">3nd p 태그</p>
+<p id="fourth">4th p 태그</p>
+<p id="fifth">5th p 태그</p>
+</body>
+</html>

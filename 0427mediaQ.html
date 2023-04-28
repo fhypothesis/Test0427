@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미디어쿼리</title>
+</head>
+<style>
+/*
+미디어쿼리 :: 특정 조건이 참인 경우, 미디어쿼리 양식에 있는 속성값 적용
+@media screen and(조건문){
+    "조건문에 대해 참일 때, 적용할 스타일"
+    선택자{
+        속성명: 속성값;
+        ...
+    }
+}
+*/
+
+body{
+    background-color: aquamarine;
+}
+
+/* max :: 최대 즉, 이하 , min :: 최소 즉, 이상*/
+/* 범위 설정은 min-width로 설정하는 것이 안정적 */
+@media screen and (min-width:600px) {
+    body{
+        background-color: blue;
+    }
+}
+@media screen and (min-width:1000px) {
+    body{
+        background-color: pink;
+    }
+}
+@media screen and (min-width:1200px) {
+    body{
+        background-color: purple;
+    }
+}
+
+/* landscape :: 화면이 가로 모드일 때 */
+/* portrait :: 화면이 세로 모드일 때 */
+/* @media screen and (orientation: portrait) { 
+    body{
+        background-color: red;
+    }
+} */
+
+</style>
+<body>
+   
+</body>
+</html>
